@@ -1,3 +1,49 @@
-p {
-    color: blue;
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    margin: 5px;
+}
+
+#heading_box {
+    border: 5px solid green;
+    height: 150px;
+    width: 100%;
+}
+
+#content {
+    margin: 5px;
+    display: flex;
+    justify-content: center;;
+    gap: 20px;
+    height: 70%;
+    width: 70%;
+    margin: 15px;
+}
+
+#form_box {
+    border: 5px solid red;
+    width: 100%;
+}
+
+#cards_box {
+    border: 5px solid blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#cards_heading {
+    border: 5px solid purple;
+    margin: 8PX;
+    height: 20%;
+}
+
+#card_box {
+    border: 5px solid yellow;
+    margin: 8PX;
+    height: 80%;
 }
