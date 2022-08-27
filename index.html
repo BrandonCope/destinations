@@ -19,11 +19,66 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <section id="heading_box"></section>
+    <section id="heading_box">
+      <h1>Vacation Destinations WishList</h1>
+      <p>
+        Found exciting places to visit on your next vacation? Use the form below
+        to add them to your wishlist.
+      </p>
+    </section>
     <section id="content">
-      <section id="form_box"></section>
+      <section id="form_box">
+        <form action="" id="destination_form" class="container-fluid">
+          <div class="mb-3">
+            <label for="destination_name" class="form-label"
+              >Destination name</label
+            >
+            <input
+              type="text"
+              class="form-control"
+              id="destination_name"
+              placeholder="Enter the name of the destination"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="location" class="form-label">Location</label>
+            <input
+              type="text"
+              class="form-control"
+              id="location"
+              placeholder="Where is it located?"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="image_url" class="form-label">Photo</label>
+            <input
+              type="text"
+              class="form-control"
+              id="image_url"
+              placeholder="Enter an image url of the place"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea
+              class="form-control"
+              id="description"
+              placeholder="Describe the location."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            id="submit_button"
+            class="btn btn-block btn-primary"
+          >
+            Add to list
+          </button>
+        </form>
+      </section>
       <section id="cards_box">
-        <div id="cards_heading"></div>
+        <div id="cards_heading">
+          <h3>Enter destination details</h3>
+        </div>
         <div id="card_box"></div>
       </section>
     </section>
