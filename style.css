@@ -5,11 +5,9 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
-    /* margin: 15px; */
 }
 
 #heading_box {
@@ -28,9 +26,10 @@ body {
     display: flex;
     justify-content: center;;
     gap: 50px;
-    height: 70%;
+    min-height: 90%;
     width: 70%;
     margin: 15px;
+    flex-grow: inherit;
 }
 
 #form_box {
@@ -39,6 +38,8 @@ body {
     display: flex;
     justify-content: center;
     padding: 10px;
+    height: 90%;
+    flex-grow: inherit;
 }
 
 #destination_form {
@@ -51,10 +52,8 @@ body {
 
 #cards_box {
     border: 5px solid blue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     width: 100%;
+    flex-grow: inherit;
 }
 
 #cards_heading {
@@ -68,5 +67,6 @@ body {
 #card_box {
     border: 5px solid yellow;
     margin: 8PX;
-    height: 90%;
+    min-height: 70%;
+    flex-grow: inherit;
 }

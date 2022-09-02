@@ -28,13 +28,19 @@
     </section>
     <section id="content">
       <section id="form_box">
-        <form action="" id="destination_form" class="container-fluid">
+        <form
+          name="destination_form"
+          id="destination_form"
+          class="container-fluid"
+        >
           <div class="mb-3">
             <label for="destination_name" class="form-label"
               >Destination name</label
             >
             <input
+              required
               type="text"
+              name="name"
               class="form-control"
               id="destination_name"
               placeholder="Enter the name of the destination"
@@ -43,7 +49,9 @@
           <div class="mb-3">
             <label for="location" class="form-label">Location</label>
             <input
+              required
               type="text"
+              name="location"
               class="form-control"
               id="location"
               placeholder="Where is it located?"
@@ -52,7 +60,9 @@
           <div class="mb-3">
             <label for="image_url" class="form-label">Photo</label>
             <input
+              required
               type="text"
+              name="image_url"
               class="form-control"
               id="image_url"
               placeholder="Enter an image url of the place"
@@ -62,6 +72,7 @@
             <label for="description" class="form-label">Description</label>
             <textarea
               class="form-control"
+              name="description"
               id="description"
               placeholder="Describe the location."
             ></textarea>
@@ -88,5 +99,6 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js"></script>
   </body>
 </html>
