@@ -10,26 +10,36 @@ body {
     width: 100vw;
 }
 
+#list_box{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    width: 300px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    white-space:nowrap;
+    border: 5px solid orange;
+}
+
 #heading_box {
     border: 5px solid green;
-    height: 25%;
-    width: 99%;
+    background-color: gray;
+    height: 40%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 3px;
 }
 
 #content {
     margin: 5px;
     display: flex;
-    justify-content: center;;
+    justify-content: space-evenly;
     gap: 50px;
-    min-height: 90%;
+    /* min-height: 90%; */
     width: 70%;
     margin: 15px;
-    flex-grow: inherit;
 }
 
 #form_box {
@@ -39,7 +49,6 @@ body {
     justify-content: center;
     padding: 10px;
     height: 90%;
-    flex-grow: inherit;
 }
 
 #destination_form {
@@ -53,7 +62,6 @@ body {
 #cards_box {
     border: 5px solid blue;
     width: 100%;
-    flex-grow: inherit;
 }
 
 #cards_heading {
@@ -67,6 +75,5 @@ body {
 #card_box {
     border: 5px solid yellow;
     margin: 8PX;
-    min-height: 70%;
-    flex-grow: inherit;
+    /* min-height: auto; */
 }
