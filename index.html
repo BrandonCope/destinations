@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Vacation Destinations WishList</title>
     <!-- Reset CSS -->
     <link
       rel="stylesheet"
@@ -38,34 +38,33 @@
               >Destination name</label
             >
             <input
-              required
-              type="text"
-              name="name"
-              class="form-control"
-              id="destination_name"
-              placeholder="Enter the name of the destination"
+            type="text"
+            name="name"
+            id="destination_name"
+            placeholder="Enter the name of the destination"
+            class="form-control"
+            required
             />
           </div>
           <div class="mb-3">
             <label for="location" class="form-label">Location</label>
             <input
-              required
-              type="text"
-              name="location"
-              class="form-control"
-              id="location"
-              placeholder="Where is it located?"
+            type="text"
+            name="location"
+            id="location"
+            placeholder="Where is it located?"
+            class="form-control"
+            required
             />
           </div>
           <div class="mb-3">
             <label for="image_url" class="form-label">Photo</label>
             <input
-              required
               type="text"
               name="image_url"
-              class="form-control"
               id="image_url"
               placeholder="Enter an image url of the place"
+              class="form-control"
             />
           </div>
           <div class="mb-3">
@@ -75,15 +74,17 @@
               name="description"
               id="description"
               placeholder="Describe the location."
+              cols="30"
+              rows="10"
             ></textarea>
           </div>
-          <button
+          <input
             type="submit"
             id="submit_button"
             class="btn btn-block btn-primary"
+            value="Add to list"
           >
-            Add to list
-          </button>
+        </input>
         </form>
       </section>
       <section id="cards_box">
