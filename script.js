@@ -127,22 +127,14 @@ function validateInputs(image, name, location, description, card, cardBody) {
 }
 
 function elementFactory({eltType, className, parentElt, text, event, src}) {
-    if (!eltType) {
-        return undefined
-    }
+    !eltType ? undefined : false;
+    
     const newElt = document.createElement(eltType);
-    if(className) {
-        newElt.classList.add(...className);
-    }
-    if(text) {
-        newElt.innerText = text;
-    }
-    if(parentElt) {
-        parentElt.appendChild(newElt);
-    }
+    className ?  newElt.classList.add(...className) : false;
+    text ?  newElt.innerText = text : false;
+    parentElt ? parentElt.appendChild(newElt) : false;
     event ? newElt.addEventListener(...event) : false;
-    if (src) {
-        newElt.src = src
-    }
+    src ? newElt.src = src : false;
+ 
     return newElt;
 }
